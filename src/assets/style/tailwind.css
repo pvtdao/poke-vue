@@ -1,0 +1,196 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.btn-black {
+	@apply after:content-[""] after:absolute after:top-0 after:left-0 after:h-full after:w-0 after:bg-black after:duration-200 after:ease-in hover:after:w-full after:-z-10;
+}
+
+.background-fire {
+	background: #fd7d24;
+}
+
+.background-poison {
+	background: #b97fc9;
+}
+
+.background-grass {
+	background: #9bcc50;
+}
+
+.background-water {
+	background: #4592c4;
+	@apply text-white;
+}
+
+.background-bug {
+	background: #729f3f;
+	@apply text-white;
+}
+
+.background-normal {
+	background: #a4acaf;
+}
+
+.background-electric {
+	background: #eed535;
+}
+
+.background-fairy {
+	background: #fdb9e9;
+}
+
+.background-fighting {
+	background: #d56723;
+	@apply text-white;
+}
+
+.background-psychic {
+	background: #f366b9;
+	@apply text-white;
+}
+
+.background-fying {
+	background: #e4f4f5;
+}
+
+.background-ground {
+	background: #b38e82;
+}
+
+.background-rock {
+	background: #a38c21;
+	@apply text-white;
+}
+
+.background-steel {
+	background: #9eb7b8;
+	@apply text-white;
+}
+
+.background-ice {
+	background: #51c4e7;
+}
+
+.background-ghost {
+	background: #7b62a3;
+	@apply text-white;
+}
+
+.background-dragon {
+	background: #177258;
+	@apply text-white;
+}
+
+.background-dark {
+	background: #707070;
+	@apply text-white;
+}
+
+.background-white {
+	background: #fff;
+}
+
+/* Stat */
+.background-hp {
+	background: #ff0000;
+}
+
+.background-attack {
+	background: #f08030;
+}
+
+.background-defense {
+	background: #f8d030;
+}
+
+.background-special-attack {
+	background: #6890f0;
+}
+
+.background-special-defense {
+	background: #78c850;
+}
+
+.background-speed {
+	background: #f85888;
+}
+
+/* Hover */
+.group:hover .group-hover\:background-fire {
+	background: #fd7d24;
+}
+
+.group:hover .group-hover\:background-poison {
+	background: #b97fc9;
+}
+
+.group:hover .group-hover\:background-grass {
+	background: #9bcc50;
+}
+
+.group:hover .group-hover\:background-water {
+	background: #4592c4;
+}
+
+.group:hover .group-hover\:background-bug {
+	background: #729f3f;
+}
+
+.group:hover .group-hover\:background-normal {
+	background: #a4acaf;
+}
+
+.group:hover .group-hover\:background-electric {
+	background: #eed535;
+}
+
+.group:hover .group-hover\:background-fairy {
+	background: #fdb9e9;
+}
+
+.group:hover .group-hover\:background-fighting {
+	background: #d56723;
+}
+
+.group:hover .group-hover\:background-psychic {
+	background: #f366b9;
+}
+
+.group:hover .group-hover\:background-fying {
+	background: #e4f4f5;
+}
+
+.group:hover .group-hover\:background-ground {
+	background: #b38e82;
+}
+
+.group:hover .group-hover\:background-rock {
+	background: #a38c21;
+}
+
+.group:hover .group-hover\:background-steel {
+	background: #9eb7b8;
+}
+
+.group:hover .group-hover\:background-ice {
+	background: #51c4e7;
+}
+
+.group:hover .group-hover\:background-ghost {
+	background: #7b62a3;
+}
+
+.group:hover .group-hover\:background-dragon {
+	background: #177258;
+}
+
+.group:hover .group-hover\:background-dark {
+	background: #707070;
+}
+
+.group:hover .group-hover\:background-white {
+	background: #fff;
+}

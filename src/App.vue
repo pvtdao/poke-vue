@@ -1,30 +1,26 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view />
+	<div
+		class="font-mono text-13 overflow-x-hidden min-h-screen overflow-y-auto pt-2 bg-yellow-200 from-yellow-200 via-yellow-200 to-yellow-300"
+	>
+		<div>
+			<NavBar />
+			<div class="mt-10">
+				<router-view />
+			</div>
+		</div>
+	</div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<script>
+import NavBar from '@/components/Home/NavBar.vue'
+import { provide, ref } from 'vue'
+export default {
+	components: {
+		NavBar
+	},
+	setup() {
+		const loading = ref(false)
+		provide('loading', loading)
+	}
 }
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+</script>
